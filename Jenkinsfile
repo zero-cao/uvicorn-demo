@@ -7,6 +7,7 @@ pipeline {
       }
       steps {
         sh 'cat /usr/lib/systemd/user/uvicorn.service'
+        sh 'cat /home/dev/workspace/uvicorn-demo_main/uvicorn.conf'
         sh 'systemctl --user restart uvicorn'
         sh 'systemctl --user status uvicorn'
       }
