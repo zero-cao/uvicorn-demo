@@ -6,6 +6,7 @@ pipeline {
         label 'executor-ubuntu20.04'
       }
       steps {
+        sh 'cat /usr/lib/systemd/user/uvicorn.service'
         sh 'systemctl --user restart uvicorn'
         sh 'systemctl --user status uvicorn'
       }
