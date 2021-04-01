@@ -10,6 +10,7 @@ pipeline {
         sh 'cat /home/dev/workspace/uvicorn-demo_main/uvicorn.conf'
         sh 'systemctl --user restart uvicorn'
         sh 'systemctl --user status uvicorn'
+        sh 'ss -antp'
       }
     }
 
