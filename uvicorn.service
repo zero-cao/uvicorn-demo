@@ -5,8 +5,8 @@ StartLimitIntervalSec=0
 
 [Service]
 Type=simple
-#EnvironmentFile=/home/dev/worksapce/example-pipeline/uvicorn-demo/uvicorn.conf
-WorkingDirectory=/home/dev/workspace/example-pipeline/uvicorn-demo
+#EnvironmentFile=/home/dev/worksapce/uvicorn-demo_main/uvicorn.conf
+WorkingDirectory=/home/dev/workspace/uvicorn-demo_main
 ExecStart=/bin/bash --login -c "/usr/local/bin/uvicorn example:app --host 0.0.0.0 --port 5000"
 Restart=always
 
