@@ -7,6 +7,7 @@ pipeline {
       }
       steps {
         sh 'systemctl --user restart uvicorn'
+        sh 'systemctl --user status uvicorn'
       }
     }
 
